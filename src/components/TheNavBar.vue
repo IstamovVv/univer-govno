@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{ 'nav-open': isNavOpen }">
     <a href="#">
       <img class="logo" alt="Logo" src="/src/assets/omnifood-logo.png" @click="goTo.home()"/>
     </a>
@@ -15,7 +15,7 @@
       </ul>
     </nav>
 
-    <button class="btn-mobile-nav">
+    <button class="btn-mobile-nav" @click="toggleNav">
       <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
       <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
     </button>
@@ -30,11 +30,17 @@ export default {
 
 <script setup>
 import { useRouter } from "vue-router";
+import { ref }       from "vue";
 
 const router = useRouter();
 
 const push = (name) => {
   router.push({ name })
+}
+
+const isNavOpen = ref(false)
+const toggleNav = () => {
+  isNavOpen.value = !isNavOpen.value;
 }
 
 const goTo = {

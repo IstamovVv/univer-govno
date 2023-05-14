@@ -2,6 +2,9 @@
 /****HEADER******/
 /***************************/
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,7 +73,6 @@
 
 .section-hero {
   background-color: #fdf2e9;
-  padding: 4.8rem 0 9.6rem 0;
 }
 
 .sticky .section-hero {
@@ -138,10 +140,6 @@
 /* ***************** */
 /* SECTION HOW */
 /* **************** */
-
-.section-how {
-  padding: 9.6rem 0;
-}
 
 .grid:last-child {
   margin-bottom: 0;
@@ -499,7 +497,7 @@
 /* **************** */
 
 .section-cta {
-  padding: 9.6rem 0 12.8rem 0;
+  padding: 18.6rem 0 12.8rem 0;
 }
 
 .cta {

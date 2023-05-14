@@ -76,6 +76,10 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  padding-top: 20em
+}
+
 /* GENERAL COMPONENTS */
 .container {
   max-width: 120rem;
