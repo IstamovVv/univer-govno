@@ -13,7 +13,7 @@
           <form class="cta-form" name="sign-up" netlify>
             <div>
               <label for="full-name">Full Name</label>
-              <input
+              <the-input
                   id="full-name"
                   type="text"
                   placeholder="John Smith"
@@ -24,7 +24,7 @@
 
             <div>
               <label for="email">Email Adress</label>
-              <input
+              <the-input
                   id="email"
                   type="email"
                   placeholder="me@example.com"
@@ -58,7 +58,10 @@
 </template>
 
 <script>
+import TheInput from "@/components/common/TheInput.vue";
+
 export default {
-  name: "Contacts"
+  name: "Contacts",
+  components: { TheInput }
 }
 </script>
