@@ -23,13 +23,13 @@
       </div>
       <div class="section-how-imgblock">
         <img class="section-how-img" alt="app-screen"
-             src="src/assets/app/app-screen-1.png"/>
+             src="/src/assets/app/app-screen-1.png"/>
       </div>
 
       <!-- STEP 2 -->
       <div class="section-how-imgblock">
         <img class="section-how-img" alt="app-screen"
-             src="src/assets/app/app-screen-2.png"/>
+             src="/src/assets/app/app-screen-2.png"/>
       </div>
       <div class="section-how-textblock">
         <span class="section-how-number">02</span>
@@ -53,7 +53,7 @@
       </div>
       <div class="section-how-imgblock">
         <img class="section-how-img" alt="app-screen"
-             src="src/assets/app/app-screen-3.png"/>
+             src="/src/assets/app/app-screen-3.png"/>
       </div>
     </div>
     <!-- <div class="container grid grid--2-cols"></div> -->

@@ -12,7 +12,7 @@
       <div class="meal">
         <img
             class="meal-img"
-            src="src/assets/meals/meal-1.jpg"
+            src="/src/assets/meals/meal-1.jpg"
             alt="japanese gyozas"
         />
         <div class="meal-content">
@@ -43,7 +43,7 @@
       <div class="meal">
         <img
             class="meal-img"
-            src="src/assets/meals/meal-2.jpg"
+            src="/src/assets/meals/meal-2.jpg"
             alt="japanese gyozas"
         />
         <div class="meal-content">

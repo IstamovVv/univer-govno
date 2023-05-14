@@ -1,9 +1,9 @@
 <template>
   <section class="section-slideshow-2">
     <div class="mySlides2" :class="currentClass">
-      <img src="src/assets/lunch1.jpg" alt="" class="img" />
-      <img src="src/assets/lunch2.jpg" alt="" class="img" />
-      <img src="src/assets/lunch3.jpg" alt="" class="img" />
+      <img src="/src/assets/lunch1.jpg" alt="" class="img" />
+      <img src="/src/assets/lunch2.jpg" alt="" class="img" />
+      <img src="/src/assets/lunch3.jpg" alt="" class="img" />
     </div>
     <a class="prev prev_2" ref="btnPrev">&lt</a>
     <a class="next next_2" ref="btnNext">&gt</a>

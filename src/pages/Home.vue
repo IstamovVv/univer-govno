@@ -16,12 +16,12 @@
         <a href="#how" class="btn btn--outline">Learn more &darr;</a>
         <div class="delivered-meals">
           <div class="delivered-imgs">
-            <img src="src/assets/customers/customer-1.jpg" alt="customers photo" />
-            <img src="src/assets/customers/customer-2.jpg" alt="customers photo" />
-            <img src="src/assets/customers/customer-3.jpg" alt="customers photo" />
-            <img src="src/assets/customers/customer-4.jpg" alt="customers photo" />
-            <img src="src/assets/customers/customer-5.jpg" alt="customers photo" />
-            <img src="src/assets/customers/customer-6.jpg" alt="customers photo" />
+            <img src="/src/assets/customers/customer-1.jpg" alt="customers photo" />
+            <img src="/src/assets/customers/customer-2.jpg" alt="customers photo" />
+            <img src="/src/assets/customers/customer-3.jpg" alt="customers photo" />
+            <img src="/src/assets/customers/customer-4.jpg" alt="customers photo" />
+            <img src="/src/assets/customers/customer-5.jpg" alt="customers photo" />
+            <img src="/src/assets/customers/customer-6.jpg" alt="customers photo" />
           </div>
           <p class="delivered-text">
             <span>250,000+</span> meals delivered last year!
@@ -30,10 +30,9 @@
       </div>
       <div class="hero-image-box">
         <picture>
-          <source srcset="src/assets/hero.webp" type="image/webp" />
-          <source srcset="src/assets/hero-min.png" type="image/png" />
+          <source srcset="/src/assets/hero.webp" type="image/webp" />
           <img
-              src="src/assets/hero.webp"
+              src="/src/assets/hero.webp"
               class="hero-img"
               alt="woman enjoying food"
           />

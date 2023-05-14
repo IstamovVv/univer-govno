@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <a href="#">
-      <img class="logo" alt="Logo" src="src/assets/omnifood-logo.png" @click="goTo.home()"/>
+      <img class="logo" alt="Logo" src="/src/assets/omnifood-logo.png" @click="goTo.home()"/>
     </a>
     <nav class="main-nav">
       <ul class="main-nav-list">

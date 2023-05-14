@@ -8,7 +8,7 @@
         <figure class="testimonial">
           <img
               class="testimonial-img"
-              src="src/assets/customers\dave.jpg"
+              src="/src/assets/customers\dave.jpg"
               alt="photo of customer dave bryson"
           />
           <blockquote class="testimonial-text">
@@ -21,7 +21,7 @@
         <figure class="testimonial">
           <img
               class="testimonial-img"
-              src="src/assets/customers/ben.jpg"
+              src="/src/assets/customers/ben.jpg"
               alt="photo of customer Ben Hadley"
           />
           <blockquote class="testimonial-text">
@@ -34,7 +34,7 @@
         <figure class="testimonial">
           <img
               class="testimonial-img"
-              src="src/assets/customers/steve.jpg"
+              src="/src/assets/customers/steve.jpg"
               alt="photo of customer Steve Miller"
           />
           <blockquote class="testimonial-text">
@@ -47,7 +47,7 @@
         <figure class="testimonial">
           <img
               class="testimonial-img"
-              src="src/assets/customers/hannah.jpg"
+              src="/src/assets/customers/hannah.jpg"
               alt="photo of customer Hannah Smith"
           />
           <blockquote class="testimonial-text">
@@ -61,7 +61,7 @@
     <div class="gallery">
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-1.jpg"
+            src="/src/assets/gallery/gallery-1.jpg"
             alt="photo of beautifully arranged food"
         />
         <!-- <figcaption>Caption</figcaption> -->
@@ -69,77 +69,77 @@
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-2.jpg"
+            src="/src/assets/gallery/gallery-2.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-3.jpg"
+            src="/src/assets/gallery/gallery-3.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-4.jpg"
+            src="/src/assets/gallery/gallery-4.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-5.jpg"
+            src="/src/assets/gallery/gallery-5.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-6.jpg"
+            src="/src/assets/gallery/gallery-6.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-7.jpg"
+            src="/src/assets/gallery/gallery-7.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-8.jpg"
+            src="/src/assets/gallery/gallery-8.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-9.jpg"
+            src="/src/assets/gallery/gallery-9.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-10.jpg"
+            src="/src/assets/gallery/gallery-10.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-11.jpg"
+            src="/src/assets/gallery/gallery-11.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
 
       <figure class="gallery-item">
         <img
-            src="src/assets/gallery/gallery-12.jpg"
+            src="/src/assets/gallery/gallery-12.jpg"
             alt="photo of beautifully arranged food"
         />
       </figure>
