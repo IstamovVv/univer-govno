@@ -4,6 +4,7 @@ import HowItWorks                         from "@/pages/HowItWorks.vue";
 import Meals                              from "@/pages/Meals.vue";
 import Testimonals                        from "@/pages/Testimonals.vue";
 import Pricing                            from "@/pages/Pricing.vue";
+import Contacts                           from "@/pages/Contacts.vue";
 
 const routes = [
     {
@@ -25,6 +26,10 @@ const routes = [
     {
         path: '/pricing',
         component: Pricing
+    },
+    {
+        path: '/contacts',
+        component: Contacts
     }
 ]
 
