@@ -5,13 +5,13 @@
     </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#how">How it works</a></li>
-        <li><a class="main-nav-link" href="#meals">Meals</a></li>
+        <li><a class="main-nav-link">How it works</a></li>
+        <li><a class="main-nav-link">Meals</a></li>
         <li>
-          <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          <a class="main-nav-link">Testimonials</a>
         </li>
-        <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-        <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+        <li><a class="main-nav-link">Pricing</a></li>
+        <li><a class="main-nav-link nav-cta">Try for free</a></li>
       </ul>
     </nav>
 
@@ -50,16 +50,17 @@ export default {
 }
 
 .main-nav-link:visited,
-.main-nav-link:link {
+.main-nav-link {
   display: inline-block;
   text-decoration: none;
   color: #333;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
-.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta,
 .main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
