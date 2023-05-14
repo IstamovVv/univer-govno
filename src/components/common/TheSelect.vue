@@ -20,7 +20,7 @@ export default {
 </script>
 
 <script setup>
-import { ref, watch } from "vue";
+import { computed, ref, watch } from "vue";
 
 const emit = defineEmits(['update:value']);
 
@@ -47,8 +47,12 @@ watch(() => props.value, newValue => {
   proxyValue.value = newValue
 })
 
+watch(proxyValue, newValue => {
+  emit('update:value', newValue)
+})
+
 const onChange = (event) => {
-  emit('update:value', event.target.value)
+  proxyValue.value = event.target.value
 }
 </script>
 
