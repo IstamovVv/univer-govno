@@ -23,7 +23,7 @@
             </div>
 
             <div>
-              <label for="email">Email Adress</label>
+              <label for="email">Email Address</label>
               <the-input
                   id="email"
                   type="email"
@@ -34,14 +34,11 @@
             </div>
 
             <div>
-              <label for="select-where">Where did you hear from us?</label>
-              <select id="select-where" name="select-where" required>
-                <option value="">Please choose one option</option>
-                <option value="friends">Friends and family</option>
-                <option value="youtube">Youtube</option>
-                <option value="facebook">Facebook</option>
-                <option value="others">Others</option>
-              </select>
+              <the-select
+                  required
+                  label="Where did you hear from us?"
+                  :options="options"
+              />
             </div>
 
             <button class="btn btn--form">Sign up now</button>
@@ -58,10 +55,23 @@
 </template>
 
 <script>
-import TheInput from "@/components/common/TheInput.vue";
+
 
 export default {
-  name: "Contacts",
-  components: { TheInput }
+  name: "Contacts"
 }
+</script>
+
+<script setup>
+import TheInput  from "@/components/common/TheInput.vue";
+import TheSelect from "@/components/common/TheSelect.vue";
+import { ref }   from "vue";
+
+const options = ref([
+  { value: '', text: 'Please choose one option' },
+  { value: 'friends', text: 'Friends and family' },
+  { value: 'youtube', text: 'Youtube' },
+  { value: 'facebook', text: 'Facebook' },
+  { value: 'others', text: 'Others' },
+])
 </script>
