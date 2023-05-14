@@ -12,7 +12,7 @@
 
 <script setup>
 // const button = document.querySelector(".btn-slider");
-import { onMounted, ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 
 const currentClass = ref('slide1');
 
@@ -41,14 +41,22 @@ const getPrev = () => {
 const btnPrev = ref(null);
 const btnNext = ref(null);
 
-onMounted(() => {
-  btnPrev.value.addEventListener("click", function () {
-    currentClass.value = `${getPrev()}`;
-  });
+const btnPrevListener = function () {
+  currentClass.value = `${getPrev()}`;
+}
 
-  btnNext.value.addEventListener("click", function () {
-    currentClass.value = `${getNext()}`;
-  });
+const btnNextListener = function () {
+  currentClass.value = `${getNext()}`;
+}
+
+onMounted(() => {
+  btnPrev.value.addEventListener("click", btnPrevListener);
+  btnNext.value.addEventListener("click", btnNextListener);
+})
+
+onUnmounted(() => {
+  btnPrev.value.removeEventListener("click", btnPrevListener)
+  btnNext.value.removeEventListener("click", btnNextListener)
 })
 
 </script>
