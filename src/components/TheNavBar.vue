@@ -37,12 +37,6 @@ const router = useRouter();
 const push = (name) => {
   router.push({ name })
 }
-
-const isNavOpen = ref(false)
-const toggleNav = () => {
-  isNavOpen.value = !isNavOpen.value;
-}
-
 const goTo = {
   home: push.bind(null, 'Home'),
   how: push.bind(null, 'How'),
@@ -51,4 +45,10 @@ const goTo = {
   pricing: push.bind(null, 'Pricing'),
   contacts: push.bind(null, 'Contacts'),
 }
+
+const isNavOpen = ref(false)
+const toggleNav = () => {
+  isNavOpen.value = !isNavOpen.value;
+}
+
 </script>

@@ -151,7 +151,7 @@ section {
 }
 
 .btn,
-.btn:link,
+.btn,
 .btn:visited {
   display: inline-block;
   text-decoration: none;
@@ -165,7 +165,7 @@ section {
   font-family: inherit;
 }
 
-.btn--full:link,
+.btn--full,
 .btn--full:visited {
   background-color: #e67e33;
   color: #fff;
@@ -176,7 +176,7 @@ section {
   background-color: #cf712e;
 }
 
-.btn--outline:link,
+.btn--outline,
 .btn--outline:visited {
   background-color: #fff;
   color: #555;
@@ -199,7 +199,7 @@ section {
   color: #555;
 }
 
-.link:link,
+.link,
 .link:visited {
   display: inline-block;
   color: #e67e22;

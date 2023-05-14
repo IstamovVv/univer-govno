@@ -10,10 +10,10 @@
           eat healthy again. Tailored to your personal tastes and
           nutritional needs.
         </p>
-        <a href="#cta" class="btn btn--full margin-right-sm"
+        <a @click="goTo.contacts()" class="btn btn--full margin-right-sm"
         >Start eating well</a
         >
-        <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+        <a @click="goTo.how()" class="btn btn--outline">Learn more &darr;</a>
         <div class="delivered-meals">
           <div class="delivered-imgs">
             <img src="/src/assets/customers/customer-1.jpg" alt="customers photo" />
@@ -45,5 +45,21 @@
 <script>
 export default {
   name: "Home"
+}
+</script>
+
+<script setup>
+
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const push = (name) => {
+  router.push({ name })
+}
+
+const goTo = {
+  how: push.bind(null, 'How'),
+  contacts: push.bind(null, 'Contacts'),
 }
 </script>

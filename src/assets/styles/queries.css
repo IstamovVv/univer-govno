@@ -140,7 +140,7 @@ Insted 1rem=1em=16px */
   }
 
   .main-nav-link:visited,
-  .main-nav-link:link {
+  .main-nav-link {
     font-size: 3rem;
   }
 
@@ -214,7 +214,7 @@ Insted 1rem=1em=16px */
     padding: 2.4rem 0 6.4rem 0;
   }
   .btn,
-  .btn:link,
+  .btn,
   .btn:visited {
     padding: 2.4rem 1.6rem;
   }

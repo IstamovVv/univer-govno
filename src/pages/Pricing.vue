@@ -33,9 +33,8 @@
           </li>
         </ul>
         <div class="plan-sign-up">
-          <a href="#cta" class="btn btn--full margin-right-sm"
-          >Start eating well</a
-          >
+          <a @click="goTo.contacts" class="btn btn--full margin-right-sm"
+          >Start eating well</a>
         </div>
       </div>
 
@@ -64,9 +63,7 @@
           </li>
         </ul>
         <div class="plan-sign-up">
-          <a href="#cta" class="btn btn--full margin-right-sm"
-          >Start eating well</a
-          >
+          <a @click="goTo.pricing" class="btn btn--full margin-right-sm">Start eating well</a>
         </div>
       </div>
     </div>
@@ -116,6 +113,21 @@
 <script>
 export default {
   name: "Pricing"
+}
+</script>
+
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const push = (name) => {
+  router.push({ name })
+}
+
+const goTo = {
+  contacts: push.bind(null, 'Contacts'),
+  pricing: push.bind(null, 'Pricing'),
 }
 </script>
 
