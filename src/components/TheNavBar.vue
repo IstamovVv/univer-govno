@@ -1,17 +1,17 @@
 <template>
   <header class="header">
     <a href="#">
-      <img class="logo" alt="Logo" src="src/assets/omnifood-logo.png"/>
+      <img class="logo" alt="Logo" src="src/assets/omnifood-logo.png" @click="goTo.home()"/>
     </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link">How it works</a></li>
-        <li><a class="main-nav-link">Meals</a></li>
+        <li><a class="main-nav-link" @click="goTo.how()">How it works</a></li>
+        <li><a class="main-nav-link" @click="goTo.meals()">Meals</a></li>
         <li>
-          <a class="main-nav-link">Testimonials</a>
+          <a class="main-nav-link" @click="goTo.testimonials()">Testimonials</a>
         </li>
-        <li><a class="main-nav-link">Pricing</a></li>
-        <li><a class="main-nav-link nav-cta">Try for free</a></li>
+        <li><a class="main-nav-link" @click="goTo.pricing()">Pricing</a></li>
+        <li><a class="main-nav-link nav-cta" @click="goTo.contacts()">Try for free</a></li>
       </ul>
     </nav>
 
@@ -25,6 +25,25 @@
 <script>
 export default {
   name: "TheNavBar"
+}
+</script>
+
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const push = (name) => {
+  router.push({ name })
+}
+
+const goTo = {
+  home: push.bind(null, 'Home'),
+  how: push.bind(null, 'How'),
+  meals: push.bind(null, 'Meals'),
+  testimonials: push.bind(null, 'Testimonials'),
+  pricing: push.bind(null, 'Pricing'),
+  contacts: push.bind(null, 'Contacts'),
 }
 </script>
 

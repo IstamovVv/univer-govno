@@ -8,26 +8,32 @@ import Contacts                           from "@/pages/Contacts.vue";
 
 const routes = [
     {
+        name: 'Home',
         path: '/',
         component: Home
     },
     {
+        name: 'How',
         path: '/how',
         component: HowItWorks
     },
     {
+        name: 'Meals',
         path: '/meals',
         component: Meals
     },
     {
-        path: '/testimonals',
+        name: 'Testimonials',
+        path: '/testimonials',
         component: Testimonals
     },
     {
+        name: 'Pricing',
         path: '/pricing',
         component: Pricing
     },
     {
+        name: 'Contacts',
         path: '/contacts',
         component: Contacts
     }
