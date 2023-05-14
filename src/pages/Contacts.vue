@@ -36,6 +36,7 @@
             <div>
               <the-select
                   required
+                  v-model:value="selectValue"
                   label="Where did you hear from us?"
                   :options="options"
               />
@@ -74,4 +75,6 @@ const options = ref([
   { value: 'facebook', text: 'Facebook' },
   { value: 'others', text: 'Others' },
 ])
+
+const selectValue = ref('');
 </script>
